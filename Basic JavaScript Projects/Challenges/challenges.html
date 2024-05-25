@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="challenges.css"/> 
+    <script src="challenges.js"></script>
+    
+    <title>Challenges</title>
+</head>
+<body>
+    <form id="validationCheck" name="validationCheck" method="post">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" onchange="validatePhoneNumber()">
+        <button type="submit">Submit</button>
+        <div id="phoneValidationMsg"></div>
+    </form>
+
+    <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="animated-element"></div>
+<img src="1.png" id="zoomC">
+<br>
+<br>
+<br>
+<br>
+<!--Smooth Scrolling Example-->
+<h1>Smooth Scroll</h1>
+<a href="https://qaramano.github.io/Ok.github.io/#home/" target="_blank">Visit my page!</a> 
+
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+    <p>Click on the link to see the "smooth" scrolling effect.</p>
+    <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+    <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+<!--auto slideshow-->
+<div id="slideshow">
+    <div>
+      <img src="https://assets.codepen.io/9632/dog.jpg">
+    </div>
+    <div>
+      <img src="https://assets.codepen.io/9632/plant.jpg">
+    </div>
+    <div>
+      Pretty cool eh? This slide is proof the content can be anything.
+    </div>
+ </div>
+ <br>
+ <br>
+ <br>
+ <div class="sticky-contact-button">
+    <a href="#contact-form1">Contact</a>
+</div>
+
+<div id="contact-form1">
+    <h2>Contact Us</h2>
+    <form action="/submit-contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<!--horizontal rule-->
+<h1>Horizontal Rule</h1>
+<hr><!--this is an example-->
+<p>the above line is an example</p>
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

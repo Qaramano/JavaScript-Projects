@@ -1,0 +1,179 @@
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, change the background color */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Red background color for the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Hover effects for buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+@keyframes slidein {
+    from {
+        top: 0;
+    }
+    to {
+        top: 200px;
+    }
+}
+
+/* Apply the slide-in animation to an element with the class "animated-element" */
+.animated-element {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #0074D9;
+    animation-name: slidein;
+    animation-duration: 2s; /* Animation duration: 2 seconds */
+    animation-timing-function: ease; /* Animation timing function: ease (smooth acceleration) */
+    animation-delay: 1s; /* Animation delay: starts 1 second after the page loads */
+    animation-iteration-count: infinite; /* Animation iteration count: repeats indefinitely */
+}
+
+#zoomC {
+    /* Dimensions */
+    width: 600px;
+    height: 360px;
+    /* Background image */
+    background: url("1.png");
+    background-position: center;
+    background-size: cover;
+    /* Animate zoom */
+    transition: transform ease 0.3s;
+  }
+  #zoomC:hover {
+    transform: scale(1.2);
+  }
+  
+ /* Enable smooth scrolling for all links */
+ html {
+    scroll-behavior: smooth;
+  }
+  
+  #section1 {
+    height: 600px;
+    background-color: pink;
+  }
+  
+  #section2 {
+    height: 600px;
+    background-color: yellow;
+  }
+
+  #slideshow {
+    margin: 80px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  /* styles.css */
+.sticky-contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ba4400;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form1 {
+    display: none; /* Initially hide the form */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
